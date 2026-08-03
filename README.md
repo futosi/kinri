@@ -4,7 +4,7 @@
 
 ## 🌐 公開URL
 
-**https://futosi.github.io/kinri-tracker/**
+**https://futosi.github.io/kinri/**
 
 GitHub Actions が毎月 1日・15日に自動で金利を取得して更新するため、URLを開くだけで常に最新の推移が見られます(手元で何かを実行する必要はありません)。
 
