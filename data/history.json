@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T23:01:45",
+  "generated_at": "2026-08-03T09:33:00",
   "labels": [
     "2010-01",
     "2010-02",
@@ -677,17 +677,17 @@
         2.71,
         3.21,
         3.14,
-        null
+        3.29
       ],
       "meta": {
-        "scraped_month": "2026-07",
-        "scraped_rate": 3.14
+        "scraped_month": "2026-08",
+        "scraped_rate": 3.29
       }
     }
   ],
   "status": {
     "hendo": "OK (11件の変更点, 最新 3.125%)",
     "flat35_history": "OK (月次推移表 251件, 最新 2026-07)",
-    "flat35_current": "OK (当月 2026-07 = 3.14% をflat35.comから補完)"
+    "flat35_current": "OK (当月 2026-08 = 3.29% をflat35.comから補完)"
   }
 }
