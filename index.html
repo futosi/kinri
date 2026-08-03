@@ -82,8 +82,18 @@
 </div>
 
 <script src="vendor/chart.umd.min.js"></script>
-<script src="data/history.js"></script>
 <script>
+// data/history.js を毎回キャッシュ無視で読み込む(クエリで一意化し、ブラウザ/CDNの
+// キャッシュに古いデータが残って更新が反映されない事態を防ぐ)。
+(function(){
+  const s = document.createElement('script');
+  s.src = 'data/history.js?_=' + Date.now();
+  s.onload = init;
+  s.onerror = init; // 読み込み失敗時も後段の「データなし」表示に落とす
+  document.head.appendChild(s);
+})();
+
+function init(){
 const D = window.RATE_DATA;
 if(!D){ document.getElementById('cards').innerHTML =
   '<div class="card">データがありません。<br>「更新して開く.bat」を実行してください。</div>'; }
@@ -204,6 +214,7 @@ if(D){
   document.getElementById('tg-hendo').addEventListener('change', applyToggles);
   document.getElementById('tg-flat').addEventListener('change', applyToggles);
 }
+} // end init()
 </script>
 </body>
 </html>
