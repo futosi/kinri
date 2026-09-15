@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T23:45:07",
+  "generated_at": "2026-09-15T23:56:25",
   "labels": [
     "2010-01",
     "2010-02",
@@ -687,15 +687,11 @@
         3.29,
         3.46
       ],
-      "meta": {
-        "scraped_month": "2026-09",
-        "scraped_rate": 3.46
-      }
+      "meta": {}
     }
   ],
   "status": {
     "hendo": "OK (12件の変更点, 最新 3.375%)",
-    "flat35_history": "OK (月次推移表 252件, 最新 2026-08)",
-    "flat35_current": "OK (当月 2026-09 = 3.46% をflat35.comから補完)"
+    "flat35_history": "推移表の取得に失敗(シード+前回値を使用): HTTPSConnectionPool(host='lifeplan-fp.com', port=443): Max retries exceeded with url: /flat35.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='lifeplan-fp.com', port=443) at 0x7f73f9365760>, 'Connection to lifeplan-fp.com timed out. (connect timeout=25)'))"
   }
 }
